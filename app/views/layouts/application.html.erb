@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Earthstar</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+               
+                <a class="navbar-brand" href="/">EARTH STARS</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Models</a>
+                    </li>
+                    <li>
+                    	<a class="page-scroll" href="#portfolio">Get on Board</a>
+                    </li> 
+                    <li>
+                    	<a class="page-scroll" href="#portfolio">Contact Us</a>
+                    </li>  
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Login</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+   <style type="text/css">
+   
+   	.navbar {
+   		background-color: black;
+   		padding-top: 20px;
+
+   	}
+   	.navbar-head{
+   		font-size: 30px;
+   		color: white;	
+   	}
+   	.navbar-navi{
+   		color:white;
+   	}
+   	
+   </style>
+
+<%= yield %>
+
+</body>
+</html>
