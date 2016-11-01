@@ -26,6 +26,7 @@ header {
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
   background-color:black;
+  border:none;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
